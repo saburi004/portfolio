@@ -15,8 +15,8 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg">
-            Let's Work Together
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg glegoo-bold ">
+          Contact Me
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to bring your ideas to life? Let's create something amazing together!
@@ -40,11 +40,11 @@ export default function ContactSection() {
               ].map((contact, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center gap-4 p-4 backdrop-blur-md bg-white/5 border border-purple-400/20 rounded-xl shadow-2xl shadow-purple-500/10"
+                  className="flex items-center gap-4 p-4 backdrop-blur-md bg-white/5 border border-[#39D3E0]-400/20 rounded-xl shadow-2xl shadow-purple-500/10"
                   whileHover={{
-                    borderColor: "rgba(147, 51, 234, 0.4)",
-                    backgroundColor: "rgba(255, 255, 255, 0.08)",
-                    boxShadow: "0 10px 30px rgba(147, 51, 234, 0.2)",
+                    borderColor: "rgba(90, 183, 237, 0.4)",
+                    backgroundColor: "rgba(74, 225, 255, 0.09)",
+                    boxShadow: "0 10px 30px rgba(51, 194, 234, 0.56)",
                   }}
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
@@ -66,7 +66,7 @@ export default function ContactSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="backdrop-blur-md bg-white/5 border border-purple-400/20 rounded-2xl p-8 shadow-2xl shadow-purple-500/10">
+            <div className="backdrop-blur-md bg-white/5 border border-[#42E9E9]-400/20 rounded-2xl p-8 shadow-2xl shadow-[#42E9E9]-500/10">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
@@ -104,7 +104,7 @@ export default function ContactSection() {
                 </div>
                 <motion.button
                   type="submit"
-                  className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 via-pink-500 to-cyan-400 text-white rounded-xl font-semibold shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center justify-center gap-2"
+                  className="w-full px-8 py-4 bg-gradient-to-r from-[#42E9E9]-600 via-pink-500 to-cyan-400 text-white rounded-xl font-semibold shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 flex items-center justify-center gap-2"
                   whileHover={{
                     scale: 1.02,
                     boxShadow: "0 20px 40px rgba(6, 182, 212, 0.4)",
