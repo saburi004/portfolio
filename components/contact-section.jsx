@@ -6,11 +6,6 @@ import { Mail, Phone, MapPin, Send } from "lucide-react"
 export default function ContactSection() {
   return (
     <section className="relative z-10 min-h-screen px-6 py-20">
-      {/* Clean bright background without corner black gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-purple-800/10 to-pink-900/20" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,#8B5CF6_0%,#A855F7_15%,transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,#EC4899_0%,#F472B6_15%,transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,#06B6D4_0%,#0891B2_10%,transparent_40%)]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div

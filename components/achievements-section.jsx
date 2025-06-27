@@ -90,42 +90,7 @@ export default function AchievementsSection() {
           ))}
         </div>
 
-        {/* Experience */}
-        <motion.h3
-          className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          Professional Experience
-        </motion.h3>
-
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <motion.div
-              key={index}
-              className="backdrop-blur-md bg-gray-900/60 border border-gray-700/50 rounded-2xl p-6"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{
-                borderColor: "rgba(147, 51, 234, 0.3)",
-                backgroundColor: "rgba(17, 24, 39, 0.8)",
-              }}
-            >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <div>
-                  <h4 className="text-xl font-bold text-white">{exp.position}</h4>
-                  <p className="text-purple-400 font-medium">{exp.company}</p>
-                </div>
-                <span className="text-pink-400 font-medium">{exp.period}</span>
-              </div>
-              <p className="text-gray-300">{exp.description}</p>
-            </motion.div>
-          ))}
-        </div>
+    
       </div>
     </section>
   )
