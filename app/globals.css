@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Glegoo:wght@400;700&display=swap');
 
 :root {
   --background: #ffffff;
@@ -27,7 +27,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-.glegoo-regular {
+/* .glegoo-regular {
   font-family: "Glegoo", serif;
   font-weight: 400;
   font-style: normal;
@@ -37,4 +37,36 @@ body {
   font-family: "Glegoo", serif;
   font-weight: 700;
   font-style: normal;
+} */
+
+.cinzel-bold {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: rgb(49, 249, 199);
+  font-style: normal;
 }
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+

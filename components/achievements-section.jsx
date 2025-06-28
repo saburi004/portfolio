@@ -1,160 +1,25 @@
-// "use client"
 
-// import { motion } from "framer-motion"
-// import { Award, Users, Code, Star } from "lucide-react"
-
-// export default function AchievementsSection() {
-//   const achievements = [
-//     {
-//       icon: Award,
-//       title: "50+ Projects Completed",
-//       description: "Successfully delivered projects for clients worldwide",
-//     },
-//     {
-//       icon: Users,
-//       title: "20+ Happy Clients",
-//       description: "Built lasting relationships with satisfied customers",
-//     },
-//     {
-//       icon: Code,
-//       title: "5+ Years Experience",
-//       description: "Continuous learning and growth in web development",
-//     },
-//     {
-//       icon: Star,
-//       title: "100% Client Satisfaction",
-//       description: "Committed to delivering excellence in every project",
-//     },
-//   ]
-
-//   const experiences = [
-//     {
-//       company: "Tech Innovators Inc.",
-//       position: "Senior Full Stack Developer",
-//       period: "2022 - Present",
-//       description: "Leading development of enterprise applications using React, Node.js, and cloud technologies.",
-//     },
-//     {
-//       company: "Digital Solutions Co.",
-//       position: "Frontend Developer",
-//       period: "2020 - 2022",
-//       description: "Developed responsive web applications and improved user experience across multiple platforms.",
-//     },
-//     {
-//       company: "StartupXYZ",
-//       position: "Junior Developer",
-//       period: "2019 - 2020",
-//       description: "Started my journey in web development, working on various projects and learning new technologies.",
-//     },
-//   ]
-
-//   return (
-//     <section className="relative z-10 min-h-screen bg-black px-6 py-20">
-//       {/* Glow effects */}
-//       <div className="absolute top-1/4 left-0 w-72 h-72 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-full blur-3xl" />
-//       <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-gradient-to-l from-pink-600/20 to-purple-600/20 rounded-full blur-3xl" />
-
-//       <div className="max-w-7xl mx-auto relative z-10">
-//         <motion.div
-//           className="text-center mb-16"
-//           initial={{ opacity: 0, y: 50 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.8 }}
-//           viewport={{ once: true }}
-//         >
-//           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg">
-//             Achievements & Experience
-//           </h2>
-//         </motion.div>
-
-//         {/* Achievements */}
-//         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-//           {achievements.map((achievement, index) => (
-//             <motion.div
-//               key={index}
-//               className="backdrop-blur-md bg-white/5 border border-purple-400/20 rounded-2xl p-6 text-center"
-//               initial={{ opacity: 0, y: 50 }}
-//               whileInView={{ opacity: 1, y: 0 }}
-//               transition={{ duration: 0.8, delay: index * 0.1 }}
-//               viewport={{ once: true }}
-//               whileHover={{
-//                 scale: 1.05,
-//                 borderColor: "rgba(147, 51, 234, 0.4)",
-//                 boxShadow: "0 10px 30px rgba(147, 51, 234, 0.2)",
-//               }}
-//             >
-//               <achievement.icon className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-//               <h3 className="text-xl font-bold text-white mb-2">{achievement.title}</h3>
-//               <p className="text-gray-300 text-sm">{achievement.description}</p>
-//             </motion.div>
-//           ))}
-//         </div>
-
-    
-//       </div>
-//     </section>
-//   )
-// }
 "use client"
-import { motion } from "framer-motion"
-import { Award, Users, Code, Star } from "lucide-react"
+
 import CircularGallery from "./ReactBits/CircularGallery"
+
 export default function AchievementsSection() {
-  const achievements = [
-    {
-      icon: Award,
-      title: "50+ Projects Completed",
-      description: "Successfully delivered projects for clients worldwide",
-    },
-    {
-      icon: Users,
-      title: "20+ Happy Clients",
-      description: "Built lasting relationships with satisfied customers",
-    },
-    {
-      icon: Code,
-      title: "5+ Years Experience",
-      description: "Continuous learning and growth in web development",
-    },
-    {
-      icon: Star,
-      title: "100% Client Satisfaction",
-      description: "Committed to delivering excellence in every project",
-    },
-  ]
-
-  const experiences = [
-    {
-      company: "Tech Innovators Inc.",
-      position: "Senior Full Stack Developer",
-      period: "2022 - Present",
-      description: "Leading development of enterprise applications using React, Node.js, and cloud technologies.",
-    },
-    {
-      company: "Digital Solutions Co.",
-      position: "Frontend Developer",
-      period: "2020 - 2022",
-      description: "Developed responsive web applications and improved user experience across multiple platforms.",
-    },
-    {
-      company: "StartupXYZ",
-      position: "Junior Developer",
-      period: "2019 - 2020",
-      description: "Started my journey in web development, working on various projects and learning new technologies.",
-    },
-  ]
-
   return (
-    <section className="relative z-10 min-h-screen bg-black px-6 py-20">
+    <section className="relative z-10 min-h-screen bg-black px-6 py-20" id="experience">
+      {/* Centered Heading */}
+      <div className="flex justify-center items-center mb-12">
+        <h1 className="text-5xl font-bold text-[#1CC1B9] cinzel-bold">Achievements</h1>
+      </div>
+
       {/* Enhanced Glow effects with #3AE0EC */}
-      <div className="absolute top-1/4 left-0 w-72 h-72 bg-gradient-to-r from-[#114C4E]-600/20 to-blue-600/20 rounded-full blur-3xl" />
-      {/* <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-gradient-to-l from-pink-600/20 to-purple-600/20 rounded-full blur-3xl" /> */}
+      <div className="absolute top-1/4 left-0 w-72 h-72 bg-gradient-to-r from-[#114C4E]/20 to-blue-600/20 rounded-full blur-2xl" />
+      <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-gradient-to-l from-pink-600/20 to-purple-600/20 rounded-full blur-3xl" />
       <div className="absolute top-1/3 right-1/4 w-60 h-60 bg-[#3AE0EC]/15 rounded-full blur-2xl" />
       <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-[#3AE0EC]/20 rounded-full blur-3xl" />
 
-    <div style={{ height: '600px', position: 'relative' }}>
-  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
-</div>
+      <div style={{ height: '500px', position: 'relative' }}>
+        <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
+      </div>
     </section>
   )
 }

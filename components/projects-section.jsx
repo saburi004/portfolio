@@ -119,55 +119,63 @@ export default function ProjectsSection() {
 
   const items = [
     {
-      image: "https://picsum.photos/300/300?grayscale",
-      title: "Project 1",
-      subtitle: "Web Application",
-      handle: "View Project",
-      borderColor: "#3B82F6",
-      gradient: "linear-gradient(145deg, #3B82F6, #000)",
+      image: "/pikaprojects.png",
+      title: "PikaProjects",
+      subtitle: "An ECommerce Site for Buying and Selling projects (NextJS , Firebase )",
+      handle: "Live Preview",
+      git: "Git Hub",
+       borderColor: "#F59E0B",
+      gradient: "linear-gradient(145deg, #F59E0B, #000)",
+      
       url: "https://google.com/"
     },
     {
-      image: "https://picsum.photos/400/400?grayscale",
-      title: "Project 2",
-      subtitle: "Mobile App",
+      image: "/portfolio.png",
+      title: "Portfolio",
+      subtitle: "My portfolio website (NextJS,TailwindCSS,Interactive Elements)",
       handle: "View Project",
+       git: "Git Hub",
       borderColor: "#10B981",
       gradient: "linear-gradient(180deg, #10B981, #000)",
-      url: "https://google.com/"
+      url: "https://portfoliosaburi.vercel.app/"
     },
     {
-      image: "https://picsum.photos/500/500?grayscale",
-      title: "Project 3",
-      subtitle: "UI/UX Design",
+      image: "/psychologist.png",
+      title: "Visiting Website",
+      subtitle: "A landing website with Quiz(HTML,Tailwind,JS)",
       handle: "View Project",
+       git: "Git Hub",
       borderColor: "#8B5CF6",
       gradient: "linear-gradient(145deg, #8B5CF6, #000)",
-      url: "https://google.com/"
+      url: "https://psychologistsingh.in/"
     },
     {
-      image: "https://picsum.photos/600/600?grayscale",
-      title: "Project 4",
-      subtitle: "E-commerce Platform",
+      image: "/vpnweb.png",
+      title: "Website for VPN Digital Services",
+      subtitle: "Visiting Platform for Vpn digital Services(NextJS)",
       handle: "View Project",
-      borderColor: "#EC4899",
+       git: "Git Hub",
+      borderColor: "#3B82F6",
+      gradient: "linear-gradient(145deg, #3B82F6, #000)",
+     
+      url: "https://vpndigitalservice.com/"
+    },
+    {
+      image: "/chatbot.png",
+      title: "ChatBot",
+      subtitle: "Using genAi api's to create and customise chatbot",
+      handle: "View Project",
+       git: "Git Hub",
+     borderColor: "#EC4899",
       gradient: "linear-gradient(180deg, #EC4899, #000)",
-      url: "https://google.com/"
-    },
-    {
-      image: "https://picsum.photos/700/700?grayscale",
-      title: "Project 5",
-      subtitle: "Dashboard System",
-      handle: "View Project",
-      borderColor: "#F59E0B",
-      gradient: "linear-gradient(145deg, #F59E0B, #000)",
-      url: "https://google.com/"
+      url: "https://government-landrecord-chatbot.vercel.app/"
     },
     {
       image: "https://picsum.photos/800/800?grayscale",
-      title: "Project 6",
-      subtitle: "API Service",
-      handle: "View Project",
+      title: "Financial Tracker",
+      subtitle: "Tracking financial mails through email(AIML)",
+      handle: "Ongoin",
+       git: "Git Hub",
       borderColor: "#EF4444",
       gradient: "linear-gradient(180deg, #EF4444, #000)",
       url: "https://google.com/"
@@ -208,15 +216,13 @@ export default function ProjectsSection() {
     >
       <div className="aspect-square relative">
         {/* Image with black and white overlay */}
-        <img
-          src={item.image}
-          alt={item.title}
-          className="w-full h-full object-cover transition-all duration-500 group-hover:filter-none"
-          style={{
-            filter: 'grayscale(100%) brightness(0.4)',
-          }}
-        />
-        
+       <div className="relative w-full bg-black rounded-t-xl overflow-hidden">
+  <img
+    src={item.image}
+    alt={item.title}
+    className="w-full h-60 md:h-64 lg:h-72 object-contain transition-all duration-500 filter grayscale group-hover:grayscale-0"
+  />
+</div>
         {/* Black and white overlay that disappears on hover */}
         <div 
           className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-500 group-hover:opacity-0"
@@ -249,6 +255,9 @@ export default function ProjectsSection() {
             <span className="inline-block px-4 py-2 bg-white bg-opacity-20 backdrop-blur-sm rounded-full text-sm font-medium">
               {item.handle}
             </span>
+             <span className="inline-block px-4 py-2 ml-3 bg-white bg-opacity-20 backdrop-blur-sm rounded-full text-sm font-medium">
+              {item.git}
+            </span>
           </motion.div>
         </div>
       </div>
@@ -262,7 +271,7 @@ export default function ProjectsSection() {
   background: `radial-gradient(circle at center,rgb(13, 174, 163) 0%,rgb(12, 34, 31) 40%, #000000 80%)`,
   minHeight: "100vh",
 }}
-    >
+    id="projects">
   
       {/* Heading */}
       <motion.div
@@ -272,7 +281,7 @@ export default function ProjectsSection() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg">
+        <h2 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg cinzel-bold">
           My Projects
         </h2>
       </motion.div>

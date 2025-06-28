@@ -112,7 +112,7 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import React from "react";
-
+import ShinyText from "./ReactBits/shinybits";
 export const AuroraBackground = ({
   className,
   children,
@@ -161,17 +161,17 @@ export const AuroraBackground = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <span className="text-white glegoo-bold ">Myself</span>
+              <span className="text-white cinzel-bold ">Its Me</span>
               <br />
-              <span className="text-white glegoo-regular ">Saburi Nikam</span>
+              <span className="text-white  lobster-two-regular">Saburi Nikam</span>
             </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
+              className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto lobster-two-regular"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-              Crafting digital experiences with cutting-edge technology and creative vision
+            <ShinyText text="In a world of static stars, I chose to glow and move — explore my universe of development." disabled={false} speed={3} className='custom-class' />
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center"

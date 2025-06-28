@@ -23,10 +23,16 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      
       animation: {
         aurora: "aurora 60s linear infinite",
+          shine: 'shine 5s linear infinite'
       },
       keyframes: {
+        shine: {
+          '0%': { 'background-position': '100%' },
+          '100%': { 'background-position': '-100%' },
+        },
         aurora: {
           from: {
             backgroundPosition: "50% 50%, 50% 50%",

@@ -216,20 +216,15 @@ export default function TimelineSection() {
   const [mounted, setMounted] = useState(false)
 
   const timelineItems = [
-    { year: "2024", title: "Senior Developer", company: "Tech Corp", description: "Leading frontend development team" },
-    {
-      year: "2023",
-      title: "Full Stack Developer",
-      company: "StartupXYZ",
-      description: "Built scalable web applications",
+    { year: "2022-2024", title: "Diploma in Computer Technology", company: "Govenment Polytechnic Nashik", description: "Completed Diploma with technical foundation in software development and computer systems." },
+   
+   {
+      year: "JAN 2024 - April 2024",
+      title: "MERN Stack Internship adn Training",
+      company: "Sumago Infotech Pvt Ltd",
+      description: "Worked as a MERN stack intern, developing full-stack applications and learning real-world project workflows.",
     },
-    {
-      year: "2022",
-      title: "Frontend Developer",
-      company: "WebStudio",
-      description: "Created responsive user interfaces",
-    },
-    { year: "2021", title: "Junior Developer", company: "CodeLab", description: "Started my development journey" },
+    { year: "Sept 2024- Ongoing", title: "BTECH -Artificial Intelligence and Data Science", company: "Vishwakarma Institute Of technology", description: "ExtraCurriculars - Web Co-ordinator Inernational Society of Automation(ISA)" },
   ]
 
   useEffect(() => {
@@ -259,7 +254,7 @@ export default function TimelineSection() {
     <section className="relative z-10 min-h-screen px-6 py-20 overflow-hidden" ref={timelineRef}>
       {/* Floating particles */}
       <div className="absolute inset-0">
-        {[...Array(12)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-[#30D5DB]/40 rounded-full"
@@ -282,7 +277,7 @@ export default function TimelineSection() {
 
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.h2
-          className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-[#30D5DB] via-[#3CD6E5] to-[#40E0D0] bg-clip-text text-transparent drop-shadow-2xl"
+          className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-[#30D5DB] via-[#3CD6E5] to-[#40E0D0] bg-clip-text text-transparent drop-shadow-2xl cinzel-bold mt-12"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -384,10 +379,10 @@ export default function TimelineSection() {
                   WebkitBackdropFilter: "blur(12px)",
                 }}
               >
-                <div className="text-[#30D5DB] font-bold text-lg mb-2 drop-shadow-sm">{item.year}</div>
-                <h3 className="text-white text-xl font-semibold mb-1 drop-shadow-sm">{item.title}</h3>
+                <div className="text-[#30D5DB] font-bold text-lg mb-2 drop-shadow-sm lobster-two-regular">{item.year}</div>
+                <h3 className="text-white text-xl font-semibold mb-1 drop-shadow-sm  ">{item.title}</h3>
                 <div className="text-[#3CD6E5] font-medium mb-3 drop-shadow-sm">{item.company}</div>
-                <p className="text-gray-100 leading-relaxed drop-shadow-sm">{item.description}</p>
+                <p className="text-gray-100 leading-relaxed drop-shadow-sm ">{item.description}</p>
               </motion.div>
             </motion.div>
           ))}
