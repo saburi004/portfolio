@@ -258,17 +258,12 @@ export default function ProjectsSection() {
   return (
     <section
       className="relative z-10 min-h-screen px-6 py-20 flex flex-col items-center"
-      style={{
-        backgroundColor: "#0E1A24",
-        backdropFilter: "blur(20px)",
-        WebkitBackdropFilter: "blur(20px)",
-        boxShadow: `
-          inset 0 0 100px rgba(58, 224, 236, 0.1),
-          0 0 50px rgba(58, 224, 236, 0.05)
-        `,
-        border: "1px solid rgba(58, 224, 236, 0.1)",
-      }}
+    style={{
+  background: `radial-gradient(circle at center,rgb(13, 174, 163) 0%,rgb(12, 34, 31) 40%, #000000 80%)`,
+  minHeight: "100vh",
+}}
     >
+  
       {/* Heading */}
       <motion.div
         className="text-center mb-16"

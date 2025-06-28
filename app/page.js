@@ -477,7 +477,7 @@ export default function PortfolioLanding() {
         ))}
 
         {/* Subtle floating particles */}
-        {[...Array(20)].map((_, i) => (
+        {[...Array(30)].map((_, i) => (
           <motion.div
             key={`particle-${i}`}
             className="absolute rounded-full"

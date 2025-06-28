@@ -161,7 +161,7 @@ export const AuroraBackground = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <span className="text-white">Myself</span>
+              <span className="text-white glegoo-bold ">Myself</span>
               <br />
               <span className="text-white glegoo-regular ">Saburi Nikam</span>
             </motion.h1>
