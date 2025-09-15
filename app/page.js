@@ -692,6 +692,7 @@ import AchievementsSection from "../components/achievements-section"
 import ContactSection from "../components/contact-section"
 import Footer from "../components/footer"
 import {AuroraBackground} from "../components/aurorabg"
+import ChatbotFloating from "@/components/chatbot"
 
 export default function PortfolioLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -1001,11 +1002,13 @@ export default function PortfolioLanding() {
         </div>
       </motion.nav>
       <AuroraBackground/>
+       
            <AboutSection />
       <TimelineSection />
       <ProjectsSection />
       <AchievementsSection />
       <ContactSection />
+       <ChatbotFloating />
      <Footer />
      
     </div>
