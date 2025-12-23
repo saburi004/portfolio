@@ -55,13 +55,13 @@ export async function POST(req) {
     const { message } = await req.json();
 
     const response = await client.chat.completions.create({
-      model: "llama-3.1-8b-instant", // or "llama3-70b-8192"
+      model: "llama-3.1-8b-instant", 
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: message },
       ],
       temperature: 0.7,
-      max_tokens: 300, // Limit response length
+      max_tokens: 300, 
     });
 
     return new Response(

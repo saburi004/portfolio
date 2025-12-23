@@ -130,9 +130,9 @@ export default function ProjectsSection() {
       url: "https://google.com/"
     },
     {
-      image: "/portfolio.png",
-      title: "Portfolio",
-      subtitle: "My portfolio website (NextJS,TailwindCSS,Interactive Elements)",
+      image: "/foodchain.jpg",
+      title: "FoodChain",
+      subtitle: "Project where ML meets Web Dev to ensure quality Food Supply to street food sellers",
       handle: "View Project",
        git: "Git Hub",
       borderColor: "#10B981",
@@ -161,9 +161,9 @@ export default function ProjectsSection() {
       url: "https://vpndigitalservice.com/"
     },
     {
-      image: "/chatbot.png",
-      title: "ChatBot",
-      subtitle: "Using genAi api's to create and customise chatbot",
+      image: "/Whatsapp.png",
+      title: "WhatsApp Chat Analysis",
+      subtitle: "A overall and personalised chat analysis and visualization",
       handle: "View Project",
        git: "Git Hub",
      borderColor: "#EC4899",
@@ -171,14 +171,14 @@ export default function ProjectsSection() {
       url: "https://government-landrecord-chatbot.vercel.app/"
     },
     {
-      image: "https://picsum.photos/800/800?grayscale",
-      title: "Financial Tracker",
-      subtitle: "Tracking financial mails through email(AIML)",
+      image: "https://ddi-dev.com/uploads/srs-users.png",
+      title: "Phase1",
+      subtitle: "A single platform for client,manager and developer ",
       handle: "Ongoin",
        git: "Git Hub",
       borderColor: "#EF4444",
       gradient: "linear-gradient(180deg, #EF4444, #000)",
-      url: "https://google.com/"
+      url: "https://github.com/saburi004/srsgenerator"
     }
   ]
 
