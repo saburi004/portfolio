@@ -3,7 +3,7 @@
 
 import { motion } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
-
+import BlurText from "./blurtext/BlurText"
 export default function TimelineSection() {
   const timelineRef = useRef(null)
   const [scrollProgress, setScrollProgress] = useState(0)
@@ -70,15 +70,21 @@ export default function TimelineSection() {
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
-        <motion.h2
+        <div
           className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-[#30D5DB] via-[#3CD6E5] to-[#40E0D0] bg-clip-text text-transparent drop-shadow-2xl cinzel-bold mt-12"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          My Journey
-        </motion.h2>
+           <BlurText
+    text="My Journey"
+    delay={120}
+    animateBy="letters"
+    direction="top"
+    className="cinzel-bold text-5xl md:text-6xl tracking-wide text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg"
+  />
+        </div>
 
         <div className="relative">
           {/* Timeline Pipe */}
@@ -176,7 +182,7 @@ export default function TimelineSection() {
                 <div className="text-[#30D5DB] font-bold text-lg mb-2 drop-shadow-sm lobster-two-regular">{item.year}</div>
                 <h3 className="text-white text-xl font-semibold mb-1 drop-shadow-sm  ">{item.title}</h3>
                 <div className="text-[#3CD6E5] font-medium mb-3 drop-shadow-sm">{item.company}</div>
-                <p className="text-gray-100 leading-relaxed drop-shadow-sm ">{item.description}</p>
+                {/* <p className="text-gray-100 leading-relaxed drop-shadow-sm ">{item.description}</p> */}
               </motion.div>
             </motion.div>
           ))}

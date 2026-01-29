@@ -2,13 +2,19 @@
 "use client"
 
 import CircularGallery from "./ReactBits/CircularGallery"
-
+import BlurText from "./blurtext/BlurText"
 export default function AchievementsSection() {
   return (
     <section className="relative z-10 min-h-screen bg-black px-6 py-20" id="experience">
       {/* Centered Heading */}
       <div className="flex justify-center items-center mb-12">
-        <h1 className="text-5xl font-bold text-[#1CC1B9] cinzel-bold">Achievements</h1>
+        <BlurText
+    text="Achievements"
+    delay={120}
+    animateBy="letters"
+    direction="top"
+    className="cinzel-bold text-5xl md:text-6xl tracking-wide text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg"
+  />
       </div>
 
       {/* Enhanced Glow effects with #3AE0EC */}

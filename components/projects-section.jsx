@@ -112,7 +112,7 @@
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-
+import BlurText from "./blurtext/BlurText"
 export default function ProjectsSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
@@ -265,13 +265,16 @@ export default function ProjectsSection() {
   )
 
   return (
-    <section
-      className="relative z-10 min-h-screen px-6 py-20 flex flex-col items-center"
-    style={{
-  background: `radial-gradient(circle at center,rgb(13, 174, 163) 0%,rgb(12, 34, 31) 40%, #000000 80%)`,
-  minHeight: "100vh",
-}}
-    id="projects">
+    
+  <section
+  id="projects"
+  className="relative z-10 min-h-screen px-6 py-20 flex flex-col items-center overflow-hidden"
+  style={{
+    background: `radial-gradient(circle at center, rgb(49,249,199) 0%, rgba(0,0,0,1) 40%, #000000 80%)`,
+    minHeight: "100vh",
+  }}
+>
+
   
       {/* Heading */}
       <motion.div
@@ -281,9 +284,13 @@ export default function ProjectsSection() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg cinzel-bold">
-          My Projects
-        </h2>
+         <BlurText
+    text="My Projects"
+    delay={120}
+    animateBy="letters"
+    direction="top"
+    className="cinzel-bold text-5xl md:text-6xl tracking-wide text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg"
+  />
       </motion.div>
 
       {/* Desktop Grid */}

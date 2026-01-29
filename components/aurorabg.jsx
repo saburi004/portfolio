@@ -113,6 +113,9 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import React from "react";
 import ShinyText from "./ReactBits/shinybits";
+import BlurText from "./blurtext/BlurText";
+import FallingStars from "./FallingStars";
+import Mountains from "./Mountains";
 export const AuroraBackground = ({
   className,
   children,
@@ -121,6 +124,9 @@ export const AuroraBackground = ({
 }) => {
   return (
     <main>
+      <FallingStars />
+      <Mountains/>
+
       <div
         className={cn(
           "transition-bg relative flex h-[100vh] flex-col items-center justify-center text-white",
@@ -154,7 +160,7 @@ export const AuroraBackground = ({
         
         {/* Hero Section Content */}
         <section className="relative z-10 min-h-screen flex items-center justify-center px-6">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center items-center">
             <motion.h1
               className="text-6xl md:text-8xl font-bold mb-6"
               initial={{ opacity: 0, y: 50 }}
@@ -163,15 +169,20 @@ export const AuroraBackground = ({
             >
               <span className="text-white cinzel-bold ">Its Me</span>
               <br />
-              <span className="text-white  lobster-two-regular">Saburi Nikam</span>
-            </motion.h1>
+ <BlurText
+    text="Saburi Nikam"
+    delay={120}
+    animateBy="letters"
+    direction="top"
+    className="cinzel-bold text-5xl md:text-6xl tracking-wide text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg items-center justify-center"
+  />            </motion.h1>
             <motion.p
               className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto lobster-two-regular"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-            <ShinyText text="In a world of static stars, I chose to glow and move — explore my universe of development." disabled={false} speed={3} className='custom-class' />
+            <ShinyText text="In a world of static stars, I chose to glow and move — explore my universe of development." disabled={false} speed={2} className='custom-class' />
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center"
