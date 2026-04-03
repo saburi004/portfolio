@@ -96,9 +96,9 @@ export default function TimelineSection() {
             style={{ height: `${scrollProgress * 100}%` }}
           >
             <motion.div
-              className="w-full h-full bg-gradient-to-b from-[#30D5DB]/80 via-[#3CD6E5]/70 to-[#40E0D0]/80 relative"
+              className="w-full h-full bg-gradient-to-b from-[#31f9c7]/80 via-[#31f9c7]/70 to-[#31f9c7]/80 relative"
               style={{
-                filter: "drop-shadow(0 0 6px rgba(48, 213, 219, 0.77)) drop-shadow(0 0 12px rgba(60, 214, 229, 0.77))",
+                filter: "drop-shadow(0 0 6px #31f9c7) drop-shadow(0 0 12px #31f9c7)",
               }}
             >
               <motion.div

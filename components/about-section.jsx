@@ -366,8 +366,8 @@ const Skills = () => {
       <div className="absolute inset-0 backdrop-blur-[140px] bg-white/[0.025]" />
 
       {/* Aurora glows */}
-      <div className="absolute -top-40 left-1/3 w-[60vw] h-[60vw] rounded-full bg-[#08F6D8]/20 blur-[160px] animate-pulse" />
-      <div className="absolute bottom-0 right-1/4 w-[45vw] h-[45vw] rounded-full bg-[#45DBF1]/15 blur-[140px] animate-pulse delay-700" />
+      <div className="absolute -top-40 left-1/3 w-[60vw] h-[60vw] rounded-full bg-[#10b981ff]/20 blur-[160px] " />
+      <div className="absolute bottom-0 right-1/4 w-[45vw] h-[45vw] rounded-full bg-[#10b981ff]/15 blur-[140px]  delay-700" />
 
       {/* Frozen light patches */}
       <div

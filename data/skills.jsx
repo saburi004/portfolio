@@ -1,22 +1,22 @@
 const skills = [
   // Frontend
   {
-    name: "React",
+    name: "Full stack in MERN",
     category: "Frontend",
     level: 90,
     iconSlug: "react",
     color: "#61DAFB",
     description:
-      "My go-to library for building interactive, state-driven user interfaces. I love its component-based architecture and vast ecosystem."
+      "Got Training in MERN Stack from Sumago Infotech Pvt Ltd, I build dynamic and responsive web applications using MongoDB, Express.js, React, and Node.js."
   },
-  {
-    name: "Tailwind CSS",
+ {
+    name: "Next.js",
     category: "Frontend",
-    level: 95,
-    iconSlug: "tailwindcss",
-    color: "#38B2AC",
+    level: 90,
+    iconSlug: "nextjs",
+    color: "#000000",
     description:
-      "I use Tailwind to rapidly build custom designs without leaving my HTML. It ensures consistency and responsiveness out of the box."
+      "I build server-side rendered applications with Next.js, leveraging its built-in SEO capabilities and performance optimizations."
   },
   {
     name: "HTML",
@@ -67,15 +67,7 @@ const skills = [
   },
 
   // Languages
-  {
-    name: "JavaScript",
-    category: "Languages",
-    level: 85,
-    iconSlug: "javascript",
-    color: "#F7DF1E",
-    description:
-      "The core language of the web. I use it to build dynamic, interactive applications across frontend and backend environments."
-  },
+
   {
     name: "Python",
     category: "Languages",
@@ -132,26 +124,53 @@ const skills = [
     description:
       "A reliable relational database commonly used for web applications, offering simplicity, performance, and wide ecosystem support."
   },
+   {
+    name: "Vector DB",
+    category: "Database",
+    level: 70,
+    iconSlug: "quadrant",
+    color: "#4479A1",
+    description:
+      "For implmenting RAG (Retrieval-Augmented Generation) systems, I utilize Vector Databases to efficiently store and retrieve high-dimensional vector representations of data, enhancing the performance of AI-driven applications."
+  },
 
   // Tools
   {
-    name: "WordPress",
+    name: "Docker",
     category: "Tools",
     level: 90,
-    iconSlug: "wordpress",
+    iconSlug: "docker",
     color: "#21759B",
     description:
-      "I leverage WordPress for rapid content management solutions, customization, and e-commerce setups for clients."
+      "I use Docker to containerize applications, ensuring consistent environments across development, testing, and production."
+  },
+   {
+    name: "Redis",
+    category: "Tools",
+    level: 90,
+    iconSlug: "redis",
+    color: "#21759B",
+    description:
+      "I use Redis for caching, session management, and real-time data processing in high-performance applications."
+  },
+   {
+    name: "PowerBi",
+    category: "Tools",
+    level: 90,
+    iconSlug: "powerbi",
+    color: "#21759B",
+    description:
+      "I use PowerBi for data visualization and business intelligence, transforming complex data sets into actionable insights through interactive dashboards."
   },
 
   {
-    name: "Supabase",
+    name: "Git/GitHub",
     category: "Backend",
     level: 75,
-    iconSlug: "supabase",
+    iconSlug: "github",
     color: "#3ECF8E",
     description:
-      "An open-source backend-as-a-service that I use for authentication, PostgreSQL databases, real-time subscriptions, and scalable full-stack applications."
+      "A distributed version control system I use for managing code changes, collaborating with teams, and maintaining project history and CI/CD."
   }
 ]
 
