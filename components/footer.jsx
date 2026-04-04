@@ -10,14 +10,14 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
           
           {/* Brand Section */}
-          <motion.h3
+          <motion.h2
             className="text-2xl font-bold bg-gradient-to-r from-cyan-300 to-pink-400 bg-clip-text text-transparent mb-4"
             whileHover={{ scale: 1.05 }}
           >
-            Portfolio
-          </motion.h3>
+            Saburi Nikam
+          </motion.h2>
           <p className="text-gray-400 leading-relaxed mb-8">
-           From thought to theme, from idea to implementation — watch technology glow with intent and impact.
+           Full-Stack Developer & AI/DS Engineer based in Pune, India. Building modern web experiences with MERN, Next.js, and Python.
           </p>
 
           {/* Bottom Bar */}
@@ -25,7 +25,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm flex items-center gap-2">
               Saburi v. Nikam
             </p>
-            <p className="text-gray-400 text-sm mt-4">© 2025 All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2026 Saburi Nikam. All rights reserved.</p>
           </div>
 
         </div>

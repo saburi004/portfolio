@@ -159,7 +159,7 @@ export const AuroraBackground = ({
         </div>
         
         {/* Hero Section Content */}
-        <section className="relative z-10 min-h-screen flex items-center justify-center px-6">
+        <section id="home" aria-label="Saburi Nikam – Hero Introduction" className="relative z-10 min-h-screen flex items-center justify-center px-6">
           <div className="max-w-4xl mx-auto text-center items-center">
             <motion.h1
               className="text-6xl md:text-8xl font-bold mb-6"
@@ -167,7 +167,7 @@ export const AuroraBackground = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <span className="text-white cinzel-bold ">Its Me</span>
+              <span className="text-white cinzel-bold ">Hi, I&apos;m</span>
               <br />
  <BlurText
     text="Saburi Nikam"
@@ -177,12 +177,12 @@ export const AuroraBackground = ({
     className="cinzel-bold text-5xl md:text-6xl tracking-wide text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg items-center justify-center"
   />            </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto lobster-two-regular"
+              className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto cinzel-regular leading-relaxed font-light"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-            <ShinyText text="In a world of static stars, I chose to glow and move — explore my universe of development." disabled={false} speed={2} className='custom-class' />
+            <ShinyText text="Full-Stack Developer & AI/DS Engineer — building impactful web applications with MERN, Next.js, Python and modern cloud tools." disabled={false} speed={2} className='custom-class' />
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center"

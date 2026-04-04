@@ -51,7 +51,7 @@ export default function ContactSection() {
     }
   }
   return (
-    <section className="relative z-10 min-h-screen px-6 py-20" id="contact">
+    <section className="relative z-10 min-h-screen px-6 py-20" id="contact" aria-label="Contact Saburi Nikam">
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
@@ -62,14 +62,14 @@ export default function ContactSection() {
           viewport={{ once: true }}
         >
            <BlurText
-    text="Contact Me"
+    text="Let's Work Together"
     delay={120}
     animateBy="letters"
     direction="top"
     className="cinzel-bold text-5xl md:text-6xl tracking-wide text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg items-center justify-center"
   />
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto lobster-two-regular">
-            Ready to bring your ideas to life? Let's create something amazing together!
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto cinzel-regular leading-relaxed font-light">
+            Open to freelance projects, full-time roles, and exciting collaborations. Drop me a message and I&apos;ll get back to you promptly!
           </p>
         </motion.div>
 

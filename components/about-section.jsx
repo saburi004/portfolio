@@ -148,7 +148,7 @@
 //   <h2 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-gradient-to-r from-[#08F6D8] via-[#45DBF1] to-[#0DB8A5] bg-clip-text drop-shadow-lg cinzel-bold">
 //     About Me
 //   </h2>
-//   <p className="text-2xl text-gray-400 max-w-3xl mx-auto lobster-two-regular">
+//   <p className="text-2xl text-gray-400 max-w-3xl mx-auto cinzel-regular ">
 //                 <ShinyText text="  Transforming ideas into elegant, functional code — one pixel and one logic block at a time." disabled={false} speed={3} className='custom-class' />
 
   
@@ -355,7 +355,8 @@ const Skills = () => {
 
   return (
     <section
-      id="skills"
+      id="about"
+      aria-label="Saburi Nikam – Technical Skills and Expertise"
       className="relative py-28 overflow-hidden"
       style={{
         background:
@@ -401,7 +402,7 @@ const Skills = () => {
         >
         <div className="flex justify-center text-center w-full">
   <BlurText
-    text="Digital Craftsmanship"
+    text="Technical Skills & Expertise"
     delay={120}
     animateBy="letters"
     direction="top"
@@ -409,8 +410,8 @@ const Skills = () => {
   />
 </div>
 
-          <p className="text-gray-400 max-w-2xl mx-auto mt-8 font-light text-lg leading-relaxed lobster-two-regular">
-                    <ShinyText text="Forged in clarity. Preserved in ice. A refined ecosystem of modern engineering." disabled={false} speed={2} className='custom-class' />
+          <p className="text-gray-400 max-w-2xl mx-auto mt-8 font-light text-lg leading-relaxed cinzel-regular ">
+                    <ShinyText text="A full-stack developer & AI enthusiast — proficient in React, Next.js, Node.js, Python, MongoDB, and cloud tooling." disabled={false} speed={2} className='custom-class' />
 
           </p>
         </motion.div>

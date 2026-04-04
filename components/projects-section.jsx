@@ -13,61 +13,59 @@ export default function ProjectsSection() {
     {
       image: "/pikaprojects.png",
       title: "PikaProjects",
-      subtitle: "An ECommerce Site for Buying and Selling projects (NextJS , Firebase )",
+      subtitle: "E-Commerce marketplace for buying & selling student projects, built with Next.js and Firebase.",
       handle: "Live Preview",
-      git: "Git Hub",
+      git: "GitHub",
        borderColor: "#F59E0B",
       gradient: "linear-gradient(145deg, #F59E0B, #000)",
-      
       url: "https://google.com/"
     },
     {
       image: "/foodchain.jpg",
       title: "FoodChain",
-      subtitle: "Project where ML meets Web Dev to ensure quality Food Supply to street food sellers",
+      subtitle: "ML-powered web app ensuring quality food supply for street food sellers by detecting adulteration.",
       handle: "View Project",
-       git: "Git Hub",
+       git: "GitHub",
       borderColor: "#10B981",
       gradient: "linear-gradient(180deg, #10b981ff, #000)",
       url: "https://portfoliosaburi.vercel.app/"
     },
     {
       image: "/psychologist.png",
-      title: "Visiting Website",
-      subtitle: "A landing website with Quiz(HTML,Tailwind,JS)",
+      title: "Psychologist Visiting Website",
+      subtitle: "Professional landing page with an interactive quiz built using HTML, Tailwind CSS, and JavaScript.",
       handle: "View Project",
-       git: "Git Hub",
+       git: "GitHub",
       borderColor: "#8B5CF6",
       gradient: "linear-gradient(145deg, #8B5CF6, #000)",
       url: "https://psychologistsingh.in/"
     },
     {
       image: "/vpnweb.png",
-      title: "Website for VPN Digital Services",
-      subtitle: "Visiting Platform for Vpn digital Services(NextJS)",
+      title: "VPN Digital Services Website",
+      subtitle: "Corporate landing page for a VPN digital services company, developed with Next.js.",
       handle: "View Project",
-       git: "Git Hub",
+       git: "GitHub",
       borderColor: "#3B82F6",
       gradient: "linear-gradient(145deg, #3B82F6, #000)",
-     
       url: "https://vpndigitalservice.com/"
     },
     {
       image: "/Whatsapp.png",
-      title: "WhatsApp Chat Analysis",
-      subtitle: "A overall and personalised chat analysis and visualization",
+      title: "WhatsApp Chat Analyser",
+      subtitle: "Data visualisation tool for personalised WhatsApp chat analysis — trends, word clouds, and insights.",
       handle: "View Project",
-       git: "Git Hub",
+       git: "GitHub",
      borderColor: "#EC4899",
       gradient: "linear-gradient(180deg, #EC4899, #000)",
       url: "https://government-landrecord-chatbot.vercel.app/"
     },
     {
       image: "https://ddi-dev.com/uploads/srs-users.png",
-      title: "Phase1",
-      subtitle: "A single platform for client,manager and developer ",
-      handle: "Ongoin",
-       git: "Git Hub",
+      title: "Phase1 – SRS Generator",
+      subtitle: "A unified platform connecting clients, project managers, and developers to auto-generate SRS documents.",
+      handle: "In Progress",
+       git: "GitHub",
       borderColor: "#EF4444",
       gradient: "linear-gradient(180deg, #EF4444, #000)",
       url: "https://github.com/saburi004/srsgenerator"
@@ -160,6 +158,7 @@ export default function ProjectsSection() {
     
   <section
   id="projects"
+  aria-label="Saburi Nikam – Portfolio Projects"
   className="relative z-10 min-h-screen px-6 py-20 flex flex-col items-center overflow-hidden"
   style={{
     background: `radial-gradient(circle at center, rgb(49,249,199) 0%, rgba(0,0,0,1) 40%, #000000 80%)`,
@@ -177,7 +176,7 @@ export default function ProjectsSection() {
         viewport={{ once: true }}
       >
          <BlurText
-    text="My Projects"
+    text="Featured Projects"
     delay={120}
     animateBy="letters"
     direction="top"

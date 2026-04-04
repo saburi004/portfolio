@@ -10,15 +10,24 @@ export default function TimelineSection() {
   const [mounted, setMounted] = useState(false)
 
   const timelineItems = [
-    { year: "2022-2024", title: "Diploma in Computer Technology", company: "Govenment Polytechnic Nashik", description: "Completed Diploma with technical foundation in software development and computer systems." },
-   
-   {
-      year: "JAN 2024 - April 2024",
-      title: "MERN Stack Internship and Training",
-      company: "Sumago Infotech Pvt Ltd",
-      description: "Worked as a MERN stack intern, developing full-stack applications and learning real-world project workflows.",
+    {
+      year: "2022 – 2024",
+      title: "Diploma in Computer Technology",
+      company: "Government Polytechnic Nashik",
+      description: "Completed a Diploma with a strong technical foundation in software development, computer systems architecture, and programming fundamentals."
     },
-    { year: "Sept 2024- Ongoing", title: "BTECH -Artificial Intelligence and Data Science", company: "Vishwakarma Institute Of technology", description: "ExtraCurriculars - Web Co-ordinator Inernational Society of Automation(ISA)" },
+    {
+      year: "Jan 2024 – April 2024",
+      title: "MERN Stack Internship & Training",
+      company: "Sumago Infotech Pvt. Ltd.",
+      description: "Worked as a full-stack MERN intern — built real-world web applications using MongoDB, Express.js, React, and Node.js. Gained hands-on exposure to REST APIs, deployment pipelines, and agile workflows.",
+    },
+    {
+      year: "Sept 2024 – Ongoing",
+      title: "BTech in Artificial Intelligence & Data Science",
+      company: "Vishwakarma Institute of Technology, Pune",
+      description: "Pursuing BTech in AI & Data Science. Active Web Co-ordinator at the International Society of Automation (ISA-VIT Student Chapter), driving tech initiatives and web development for the chapter."
+    },
   ]
 
   useEffect(() => {
@@ -45,7 +54,7 @@ export default function TimelineSection() {
   }
 
   return (
-    <section className="relative z-10 min-h-screen px-6 py-20 overflow-hidden" ref={timelineRef}>
+    <section id="experience" aria-label="Saburi Nikam – Education and Work Experience" className="relative z-10 min-h-screen px-6 py-20 overflow-hidden" ref={timelineRef}>
       {/* Floating particles */}
       <div className="absolute inset-0">
         {[...Array(20)].map((_, i) => (
@@ -61,7 +70,7 @@ export default function TimelineSection() {
               opacity: [0.2, 0.8, 0.2],
             }}
             transition={{
-              duration: 2 + Math.random() * 1, // Faster duration
+              duration: 2 + Math.random() * 1, 
               repeat: Infinity,
               delay: Math.random() * 1,
             }}
@@ -78,7 +87,7 @@ export default function TimelineSection() {
           viewport={{ once: true }}
         >
            <BlurText
-    text="My Journey"
+    text="Education & Experience"
     delay={120}
     animateBy="letters"
     direction="top"
@@ -179,10 +188,10 @@ export default function TimelineSection() {
                   WebkitBackdropFilter: "blur(12px)",
                 }}
               >
-                <div className="text-[#30D5DB] font-bold text-lg mb-2 drop-shadow-sm lobster-two-regular">{item.year}</div>
+                <div className="text-[#30D5DB] font-bold text-lg mb-2 drop-shadow-sm cinzel-regular ">{item.year}</div>
                 <h3 className="text-white text-xl font-semibold mb-1 drop-shadow-sm  ">{item.title}</h3>
                 <div className="text-[#3CD6E5] font-medium mb-3 drop-shadow-sm">{item.company}</div>
-                {/* <p className="text-gray-100 leading-relaxed drop-shadow-sm ">{item.description}</p> */}
+                <p className="text-gray-300 leading-relaxed drop-shadow-sm text-sm mt-2">{item.description}</p>
               </motion.div>
             </motion.div>
           ))}
